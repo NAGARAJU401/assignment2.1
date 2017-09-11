@@ -1,0 +1,67 @@
+The Java Architecture::
+
+Architecture:
+     
+              Java's architecture makes a useful tool for developing software in a networked environment.
+Architecuture is systematic arrangement of components.
+
+             A single component or a new function has design that has to fit within the overall architecture.
+ A similar term framwork can be throught of as the structure part of an architecture. An architecture is 
+ a design but most designs are not architecture.
+
+Java Architecture consists of the following : 
+1.JVM(Java Virtual Machine)
+2.Java Compiler
+3.JRE
+4.JDK
+5.Source code
+6.JIT
+
+1.JVM(Java Virtual Machine):
+
+       Java Virtual Machine is a component which provides environment for running java program.
+ JVM interprets the bytecode into machine code which will be executed the machine in which the java
+ program runs.
+
+2.Java compiler:
+
+       Compile the course to java class files and run the class files on a JVM. It's role in platform
+ independence is serving as a binary form for java programs that is expected by the JVM but
+ independent of underlying host platforms, and our program specific to a particular implementation
+ of the java platform.
+
+
+                       soure code 
+                            |
+                    java compiler
+                            |
+                      byte code----JVM---OS
+
+3.JRE(Java Runtime Environment):
+
+       JRE contains JVM class libraries and other supporting files.Java runtime environment it is used to
+ run a programe in java.
+       JRE performs the main tasks like : 1.Load the class. 2.Verifies the bytecode. 3.Interprets the bytecode
+-Class Loader : Class loader loads all the class files required to excute the program,once the bytecode is loaded successfully,
+	        then next step is bytecode verification by bytecode verifier.
+-Bytecode Verifier : It verifies the bytecode to see if any security problems are there in code or not.
+	        Once the code is verified and proven that there is no security issuses with the code,
+	        JVM will convert bytecode into machine code which will be directly executed by the machine in which Java program runs.
+
+4.JDK(Java Development Kit): 
+
+       Java development kit is the core component of java. JDK contains tools needed to develop the
+java programs. The JDK is what you need to compile java source code. These are components of the
+java architecture of java...
+
+5.SOURCE CODE:
+
+ source code is code that you write in the Java programming language.
+
+ source code is converted to Java bytecode by the Java compiler.
+
+ source code files usually have the .java extension.
+
+6.JIT( Just-In-Time):
+     JUST-IN-TIME is a component which helps the program execution to happen faster.
+  The JIT compiler compiles the bytecodes of that method into native machine code, compiling it "just in time" to run.
